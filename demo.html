@@ -1,0 +1,23 @@
+<DOCKTYPE html>
+    <html>
+        <head>
+            <title>javascript selector examples</title>
+        </head>
+        <body>
+            <h1 id="title">well come to my page</h1>
+            <p class="info">this i the second program.</p>
+            <button on click="show content()">click me</button>
+            <div id="out put"syle="margin_top:20px;green;"></div>
+            <script>
+                function show content(){
+                    const title=document.get element by ID("title").text content;
+                    const paragraphs=document.query selectorAll(".info");
+                    let output="<strong">Title:</strong>"+title+"<br><strong>paragraphs:</strong><br>";
+                    paragraphs.forEach((para,index)=>{
+                        output+=(index+1)+"."+para.textcontent+"<br>";
+                    })
+                    document.getElementByid("output").innerHTML=output;
+                }
+            </script>
+        </body>
+    </html>
